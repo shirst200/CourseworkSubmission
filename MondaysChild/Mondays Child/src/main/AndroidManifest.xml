@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uk.ac.gcu.mondayschild.mondayschild" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="MondaysChild"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="uk.ac.gcu.mondayschild.mondayschild.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mcOutputScreen"
+            android:label="Day Born"></activity>
+        <activity android:name=".mcSavingDataOutput"
+            android:label="string/mc_savedData"></activity>
+        <activity android:name=".mcBioActivity"
+            android:label="bioActivity"></activity>
+    </application>
+
+</manifest>
